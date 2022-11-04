@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Pembelajaran | Biologi </title>
+
+    <!-- Bootstrap CSS-->
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/konten.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm
+    fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Biologi </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="petunjuk.html">Petunjuk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Navbar Samping-->
+    <div class="side-bar">
+        <div class="menuside">
+            <div class="item"><a href="mulaibelajar.html"><i class="fas fa-chalkboard"></i>Pendahuluan</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fa-solid fa-bone"></i>  Hubungan Antar Tulang<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="subb-menu">
+                    <a href="sinartrosis.html" class="subb-item">Sinartrosis</a>
+                    <a href="amfiartrosis.html" class="subb-item">Amfiartrosis</a>
+                    <a href="diartrosis.html" class="subb-item">Diartrosis</a>
+                </div>
+            </div>
+            <div class="item"><a href="rangkuman.html"><i class="fas fa-book-reader "></i>  Rangkuman</a></div>
+            <div class="item"><a href="latihan.html"><i class="fas fa-book-open"></i>  Latihan</a></div>    
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //jquery for toggle sub menus
+                $('.sub-btn').click(function(){
+                    $(this).next('.subb-menu').slideToggle();
+                    $(this).find('dropdown').toggleClass('rotate');
+                });
+            });
+        </script>
+    </div>
+    <!-- Akhir Samping-->
+<div class="judul">
+    <h2>Pendahuluan  </h2>
+    <b>Tujuan Pembelajaran</b>
+    <p> 1. Siswa mampu memahami hubungan antartulang </p>
+    <p> 2. Siswa mampu menjelaskan hubungan antartulang </p>
+    <br>
+   
+        <b>Deskripsi Singkat</b>
+     <p> Hubungan antartulang di dalam tubuh disebut artikulasi. Agar artikulasi dapat bergerak, diperlukan struktur khusus yang disebut sendi. 
+        Terbentuknya sendi dimulai dari kartilago di daerah sendi. Mula-mula kartilago akan membesar lalu kedua ujungnya akan diliputi jaringan ikat. 
+        Kemudian kedua ujung kartilago membentuk sel-sel tulang, keduanya diselaputi oleh selaput sendi (membran sinovial) yang liat dan 
+        menghasilkan minyak pelumas tulang yang disebut cairan sinovial. </p>
+        <div class="ratio ratio-16x9">
+          <iframe src="videopendahuluan.mp4" title="YouTube video"></iframe>
+        </div>
+     <br>
+    <div id="g1" class="nextnew">
+        <br> 
+        <hr style="height:1px;border-width:1;background-color:lightgray">
+        <a href="index.html"><button class="button-left"> <- Kembali </button></a> 
+        <a href="sinartrosis.html"><button class="button-right"> Selanjutnya -> </button></a>
+    </div>
+    <!-- Akhir Konten-->
+
+</body>
+</html>

@@ -47,6 +47,7 @@
 
 .side-bar .menuside .item .subb-menu{
     background: rgba(255, 255, 255, 0.1);
+    display: none;
 }
 
 .side-bar .menuside .item .subb-menu a{

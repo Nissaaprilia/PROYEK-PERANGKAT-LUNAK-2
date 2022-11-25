@@ -18,7 +18,7 @@ const questions = [
     },
 
     {
-        question: "Hubungan antar ruang tulang belakang adalah contoh sendi..",
+        question: "Hubungan antar ruas tulang belakang adalah contoh sendi..",
         optionA: "Ampiartrosisis",
         optionB: "Kondoloid",
         optionC: "Sinartrosis Sinkondrosisi",

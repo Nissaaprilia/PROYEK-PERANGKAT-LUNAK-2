@@ -8,16 +8,6 @@ const questions = [
         optionD: "Sinartrosis",
         correctOption: "optionD"
     },
-
-    {
-        question: "Sendi antara tulang pengumpul dengan pergerakan tangan disebut sendi?",
-        optionA: "Engsel",
-        optionB: "Kondiloid",
-        optionC: "Geser",
-        optionD: "Pelana",
-        correctOption: "optionB"
-    },
-
     {
         question: "Ampiartrosis adalah hubungan antartulang yang...",
         optionA: "tidak memungkinkan untuk terjadinya pergerakan",
@@ -46,11 +36,65 @@ const questions = [
     },
 
     {
-        question: "Sendi yang memungkinkan gerak rotasi antar tulang (berporos satu) karena ujung tulang yang hanya satu dapat mengitari tulang lainnya adalah...",
-        optionA: "Putar",
-        optionB: "Engsel",
-        optionC: "Pelana",
-        optionD: "Geser",
+        question: "Tulang yang berbentuk kubus atau tidak beraturan disebut tulang…",
+        optionA: "Pipis",
+        optionB: "Pendek",
+        optionC: "Pipa",
+        optionD: "Tak Berbentuk",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Tulang yang bersifat lentur disebut tulang…",
+        optionA: "Rawan",
+        optionB: "Keras (Sejati)",
+        optionC: "Pendek",
+        optionD: "Tak Berbentuk",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "Sel-sel tulang keras yang telah mati akan membentuk rongga bekas sel tulang yang disebut",
+        optionA: "Kartilago",
+        optionB: "Osteosit",
+        optionC: "Kalsium",
+        optionD: "Lakuna",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "Tulang tak berbentuk terdapat pada...",
+        optionA: "Wajah",
+        optionB: "Kaki",
+        optionC: "Tangan",
+        optionD: "Telinga",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "Manakah yang termasuk tulang belakang…",
+        optionA: "Tulang leher",
+        optionB: "Tulang punggung",
+        optionC: "Tulang Pinggang",
+        optionD: "Semua benar",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "Fungsi tulang belakang adalah…",
+        optionA: "Melindungi otak",
+        optionB: "Menyongkong tubuh",
+        optionC: "Menompang berat tubuh",
+        optionD: "Tempat pembentukan sel-sel darah",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Rangka manusia dikelompokkan menjadi dua macam yaitu…",
+        optionA: "Rangka Aksial, Rangka Apendikular",
+        optionB: "Rangka Panggul, Rangka Aksial",
+        optionC: "Rangka Apendikular, Rangka Panggul",
+        optionD: "Semua Benar",
         correctOption: "optionA"
     },
 ]
@@ -60,7 +104,7 @@ let shuffledQuestions = [] //empty array to hold shuffled selected questions
 
 function handleQuestions() { 
     //function to shuffle and push 10 questions to shuffledQuestions array
-    while (shuffledQuestions.length <= 4) {
+    while (shuffledQuestions.length <= 9) {
         const random = questions[Math.floor(Math.random() * questions.length)]
         if (!shuffledQuestions.includes(random)) {
             shuffledQuestions.push(random)
@@ -133,15 +177,13 @@ function checkForAnswer() {
     })
 }
 
-
-
 //called when the next button is called
 function handleNextQuestion() {
     checkForAnswer()
     unCheckRadioButtons()
     //delays next question displaying for a second
     setTimeout(() => {
-        if (indexNumber <= 4) {
+        if (indexNumber <= 9) {
             NextQuestion(indexNumber)
         }
         else {
@@ -177,15 +219,15 @@ function handleEndGame() {
         remark = "Terus Mencoba."
         remarkColor = "red"
     }
-    else if (playerScore >= 1 && playerScore < 3) {
+    else if (playerScore >= 1 && playerScore < 5) {
         remark = "Tingkatkan lagi." 
         remarkColor = "orange"
     }
-    else if (playerScore >= 4) {
+    else if (playerScore >= 9) {
         remark = "Kerja bagus." 
         remarkColor = "green"
     }
-    const playerGrade = (playerScore / 5) * 100
+    const playerGrade = (playerScore / 10) * 100
 
     //data to display to score board
     document.getElementById('remarks').innerHTML = remark

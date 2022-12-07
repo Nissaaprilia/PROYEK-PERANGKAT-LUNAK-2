@@ -10,3 +10,13 @@
 section {
  padding-top: 5rem;
 }
+
+.grid-item {
+	padding: 30px;
+	border-radius: 50px;
+	background: #e2edff;
+	color: black;
+	width: 1000px;
+	position: relative;
+	left: 145px;
+}

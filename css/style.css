@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: #e2edff;
+    background-color: #24223b;
     padding: 6rem;
 }
 
@@ -14,7 +14,7 @@ section {
 .grid-item {
 	padding: 30px;
 	border-radius: 50px;
-	background: #e2edff;
+	background: #d1e7dd;
 	color: black;
 	width: 1000px;
 	position: relative;

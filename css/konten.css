@@ -56,9 +56,9 @@
 
 .judul {
     margin-top:80px;
-    margin-bottom:0px;
-    padding-bottom:0px;
-    margin-left:300px;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    margin-left: 300px;
     margin-right:10px;
     width: 80%;
     padding-right:20px;
@@ -320,4 +320,11 @@
              font-size: 1.2rem;
          }
      }
-     
+     .content-card {
+        background: white;
+        border-radius: 15px;
+        padding: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        opacity: 0.8;
+    }

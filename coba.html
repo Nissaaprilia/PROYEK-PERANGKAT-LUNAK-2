@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Latihan 3</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="/css/kuis.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div id="header">
+        
+        <button type="button" id="sidebarCollapse" class="btn btn-info atas">
+            <i class="fas fa-align-left"></i>
+           
+        </button>
+    <!-- </nav> -->
+        <font-face="times">
+        <h3 class="header-atas">Komputer dan Jaringan Dasar</h3></font-face>
+    </div>
+         
+    <div class="wrapper">
+        <!-- Sidebar  -->
+    <nav id="sidebar" class="sidebar-sticky">
+        <div class="border-sidebar">
+            <div class="sidebar-header text-center">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="img/Icon jaringan.png" style="width: 150%; height: auto; margin-top: -20px;" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                            <h6>Instalasi Jaringan Komputer</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-sidebar">
+            <ul class="list-unstyled components">
+                <!-- <li>
+                    <a href="../Materi 1/pretest.html"><span>Pretest</span></a>  
+                </li> -->
+                <li>
+                    <a href="../menu/index.html"><span><i class="fas fa-home"></i>Beranda</span></a>
+                    <div class="line-beranda"></div>
+                </li>
+                <li>
+                    <a href="#Submenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">A. Jaringan Komputer</a>
+                    <ul class="collapse list-unstyled" id="Submenu1">
+                        <li>
+                            <a href="../Materi 1/sub1_1.html">1.Jenis-Jenis Jaringan Komputer</a>
+                        </li>
+
+                        <li>
+                            <a href="../Materi 1/sub1_2.html">2. Arsitektur Jaringan Komputer</a>
+                        </li>
+
+                        <li>
+                            <a href="../Materi 1/sub1_3.html">3. Topologi Jaringan Komputer</a>
+                        </li>
+
+                        <li> 
+                            <a href="../Materi 1/sub1_4.html">4. Media Transmisi</a>
+                        </li>
+
+                        <li>
+                            <a href="../Materi 1/kuis/kuiss1.html">5. Kuis 1</a>
+                        </li>
+                    </ul>
+                </li>
+
+                    <li>
+                    <a href="#Submenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">B. Instalasi Jaringan Komputer Lokal</a>
+                    <ul class="collapse list-unstyled" id="Submenu2" style="display: block;">
+                        <li>
+                            <a href="sub2.1.html">1. Alat dan Bahan</a>
+                        </li>
+                        <li>
+                            <a href="sub2.2.html">2. Langkah-Langkah Instalasi Jaringan LAN</a>
+                        </li>
+                        <li class="active">
+                            <a href="sub2.3.html">3. Konfigurasi dan Pengujian Jaringan LAN</a>
+                        </li>
+                        <li> 
+                            <a href="Praktikum.html">4. Praktikum</a>
+                        </li>
+                        <li>
+                            <a href="kuis/kuiss2.html">5. Kuis 2</a>
+                        </li>
+                    </ul>
+                </li>
+                    <li>
+                        <a class="halaman" href="../Evaluasi/kuis/Evaluasi.html">C. Evaluasi</a><br>
+                    </li>
+                    <!-- <li>
+                        <a href="../Login/login-guru.html"><img style="width: 8%; margin-right: 4px;" src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/ffffff/external-login-call-to-action-bearicons-outline-color-bearicons.png"/>Login Guru</a>
+                           
+                    </li> -->
+            </ul>
+        </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <latihan>
+                <div class="card">
+                    <h2 style="padding-left: 20px; padding-right: 20px;">Latihan</h2>
+                    </div>  
+                    <div class="petunjuk">
+                        <p><u><b>Petunjuk : </b></u></p>
+                          <ol>
+                            <li class="nomor">Jawablah semua soal dibawah ini.</li>
+                            <li class="nomor">Soal berupa pilihan ganda.</li>
+                            <li class="nomor">Jika pilihan kamu benar, maka akan muncul tulisan "<font style="color: green;font-weight: bold;">benar</font>".</li>
+                            <li class="nomor">Jika pilihan kamu salah, maka akan muncul tulisan "<font style="color: red;font-weight: bold;">salah</font>".</li>  
+                          </ol>
+                    </div>
+                    <hr>
+                <div class="card">
+                
+                        <form name="quiz" class="card-body">
+                           <!-- <p>1. Perhatikan gambar di bawah ini!</p>
+                
+                            <div class="text-left">
+                                <img src="/img/gerakatas.jpg" class="image-content" alt=""> 
+                            </div> -->
+                        <p style="text-align: justify; text-indent: -1.3em ;margin-left: 1.3em;line-height: 2; color: black;">1. Tulang Gelang Bahu terdiri atas...</p>
+
+                        <input style="margin-left: 30px;" type="radio" name="opsi1" value="A" id="myRadio">&nbsp;tulang belikat dan 2 tulang selangka</br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi1" value="B" id="myRadio">&nbsp;2 tulang belikat<br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi1" value="C" id="myRadio">&nbsp;2 tulang selangka </br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi1" value="D" id="myRadio">&nbsp;Semua benar</br>
+                        <span id="ket-no0"> </span><br><br>
+                        
+                        <p>2. Tulang merupakan jaringan elastis yang hidup, yang dipecah dan dibangun untuk menyusun rangka manusia selama kehidupan. Fungsi rangka tubuh sebagai berikut, kecuali ….</p>
+                
+                        <input style="margin-left: 30px;" type="radio" name="opsi2" value="A" id="myRadio">&nbsp;Tempat melekatnya otot-otot
+                        </br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi2" value="B" id="myRadio">&nbsp;Tempat pembentukan sel-sel darah</br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi2" value="C" id="myRadio">&nbsp;Penyokong dan penopang tubuh</br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi2" value="D" id="myRadio">&nbsp;Dapat melakukan gerak aktif</br>
+                        
+                        <span id="ket-no1"></span><br><br>
+
+                        <p style="text-align: justify; text-indent: -1.3em ;margin-left: 1.3em;line-height: 2; color: black;">3. Manakah yang termasuk tulang belakang…</p>
+
+                        <input style="margin-left: 30px;" type="radio" name="opsi3" value="A" id="myRadio">&nbsp;Tulang leher</br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi3" value="B" id="myRadio">&nbsp;Tulang Punggung</br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi3" value="C" id="myRadio">&nbsp;Tulang Pinggang</br>
+                        <input style="margin-left: 30px;" type="radio" name="opsi3" value="D" id="myRadio">&nbsp;Semua Benar</br>
+                        <span id="ket-no2"></span><br><br>
+
+                        <p style="text-align: justify; text-indent: -1.3em ;margin-left: 1.3em;line-height: 2; color: black;">4. Tulang tengkorak bagian kepala terdiri atas...</p>
+
+                        <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="A" id="myRadio">&nbsp;10 Tulang</br>
+                        <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="B" id="myRadio">&nbsp;12 Tulang</br>
+                        <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="C" id="myRadio">&nbsp;14 Tulang</br>
+                        <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="D" id="myRadio">&nbsp;16 Tulang
+                    </br>
+                        <span id="ket-no3"></span>
+                        </br>
+                        </br>
+                        <p id="ket" class="center ket-jwbn"></p>
+                        <div class="left ket2" id="ket2"></div></p>
+                        <input type="button" class="previous" value="Periksa" onclick="getScore(this.form);">
+                        <input id="reset" type="reset" class="next" value="Coba Lagi">
+                        
+                        <!-- <input type="button" onclick="Cek();" value="Periksa" class="previous">
+                        <input id="reset" type="reset" class="next" value="Coba Lagi"> -->
+                        
+                        
+                    
+                    
+                    </form>
+                </div>
+                    
+                    </br>
+
+            </br></br></br>
+            <div id="btnlanjut">
+                <center>
+                <a href="sub2.3.html" class="previous">&laquo; Kembali</a>
+                <a href="Praktikum.html" class="next">Berikutnya &raquo;</a>
+                </center>   
+            </div>
+        </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+    <script>
+        let halaman1=localStorage.getItem('bab2')
+        let Submenu2=document.querySelectorAll('.halaman')
+        console.log(halaman1 == null);
+        if (halaman1 == null){
+            for(let i=0; i<Submenu2.length; i++){
+                Submenu2[i].href='#';
+            }
+        }  
+    </script>
+</body>
+<script src="/js/1kuis.js"></script>
+
+</html>

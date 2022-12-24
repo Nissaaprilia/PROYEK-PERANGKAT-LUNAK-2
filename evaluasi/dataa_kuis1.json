@@ -1,0 +1,107 @@
+
+[{
+    "soal0": {
+        "soal": "Indonesia adalah salah satu negara berkembang sehingga pemerintah ingin bekerja sama membuat akses jaringan komputer dengan negara Malaysia maka kedua negara tersebut harus membuat jaringan skala besar. Jenis jaringan komputer apakah yang paling tepat digunakan untuk permasalahan tersebut ?",
+        "a": "PAN (Personal Area Network) ",
+        "b": "MAN (Metropolitan Area Network)",
+        "c": "WAN (Wide Area Network)",
+        "d": "LAN (Local Area Network)",
+        "e": "SAN (Sience Area Network)",
+        "benar": "c"
+    }
+},{
+    "soal1": {
+        "soal": "Jenis jaringan yang memiliki jangkauan tidak lebih dari 30 meter dan menggunakan teknologi Wirelesss Application Protocol (WAP) dan Bluetooth adalah...",
+        "a": "PAN (Personal Area Network)",
+        "b": "WAN (Wide Area Network)",
+        "c": "MAN (Metropolitan Area Network)",
+        "d": "SAN (Sience Area Network)",
+        "e": "LAN (Local Area Network)",
+        "benar": "a"        
+    }        
+},{
+    "soal2": {
+        "soal": "Berikut ini alat untuk menghubungkan setiap node pada Topologi Star adalah...",
+        "a": "Router, LAN, Switch",
+        "b": "Switch, Router, MAN",
+        "c": "Hub, Router, WAN",
+        "d": "Switch, Router, Hub",
+        "e" : "Tester, Crimping,Router",
+        "benar": "d"
+    }
+},{
+    "soal3": {
+        "soal": "Perhatiakan gambar berikut!<br><img src='img/soal2.JPG'><br>Pada media transmisi terpadu adalah media yang membutuhkan kabel. Pada no. 2 adalah kabel...",
+        "a": "Kabel UTP",
+        "b": "Kabel STP",
+        "c": "Kabel Fiber Optic",
+        "d": "Kabel Koaksial",
+        "e": "Kabel Decimal",
+        "benar": "c"
+    }
+},{
+    "soal4": {
+        "soal": "Setiap komputer dimana setiap host dapat menjadi server dan juga menjadi client secara bersamaan adalah jaringan...",
+        "a": "Peer to peer",
+        "b": "Client and server",
+        "c": "Tree",
+        "d": "Local Area Network",
+        "e": "Bus",
+        "benar": "a"
+    }
+}, {
+    "soal5": {
+        "soal": "Kabel twisted pair, kabel coaxcial, optikal fiber adalah media...",
+        "a": "Komunikasi data",
+        "b": "Pengiriman data",
+        "c": "Pengiriman sinyal",
+        "d": "Komuunikasi sinyal",
+        "e": "Menghapus data",
+        "benar": "b",
+        "nih": "Pengiriman data"
+    }
+}, {
+    "soal6": {
+        "soal": "Metode atau cara yang digunakan agar bisa menghubungkan satu komputer dengan komputer lainnya disebut dengan...",
+        "a": "Local Area Network",
+        "b": "Client and server",
+        "c": "Topologi Jaringan",
+        "d": "Peer to Peer",
+        "e": "Personal Area Network",
+        "benar": "c",
+        "nih": "Topologi Jaringan"
+    }
+}, {
+    "soal7": {
+        "soal": "Perhatikan Gambar berikut!<br><img src='img/soal1.JPG'><br>Yang tidak termasuk media termisi terpadu adalah pada nomor...",
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4",
+        "e": "5",
+        "benar": "b",
+        "nih": "2"
+    }
+}, {
+    "soal8": {
+        "soal": "Media penghubung antara komputer adalah konektor dan kabel. Berikut ini adalah contoh media penghubung jenis kabel adalah...",
+        "a": "Kabel UTP dan Kabel Power",
+        "b": "Kabel Power dan Kabel CPU",
+        "c": "Kabel fiber Optic dan Kabel UTP",
+        "d": "Kabel fiber Optic dan Kabel CPU",
+        "e": "Kabel Power dan Kabel Fiber Optic",
+        "benar": "c",
+        "nih": "Kabel fiber Optic dan Kabel UTP"
+    }
+}, {
+    "soal9": {
+        "soal": "Media Transmisi Tidak Terpadu Merupakan jaringan dengan medium berupa gelombang elektromagnetik. Berikut ini yang tidak termasuk media transmisi tidak terpadu adalah...",
+        "a": "Gelobang Radio",
+        "b": "Wifi",
+        "c": "Bluetooth",
+        "d": "Komunikasi Satelit",
+        "e": "Fiber Optic",
+        "benar": "e",
+        "nih": "Fiber Optic"
+    }
+}]

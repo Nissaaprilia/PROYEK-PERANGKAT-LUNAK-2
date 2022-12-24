@@ -4,8 +4,8 @@ let dropPoints;
 const startButton = document.getElementById("start");
 const result = document.getElementById("result");
 const controls = document.querySelector(".controls-container");
-const dragContainer = document.querySelector(".draggable-objects");
-const dropContainer = document.querySelector(".drop-points");
+const dragContainerr = document.querySelector(".draggable-objects");
+const dropContainerr = document.querySelector(".drop-points");
 const data = [
   "kondiloid",
   "luncur",
@@ -127,25 +127,25 @@ const drop = (e) => {
       //insert new img
       e.target.insertAdjacentHTML(
         "afterbegin",
-        `<img src="${draggedElementData}.png">`
+        `<img src="${draggedElementData}.jpg">`
       );
       count += 1;
     }
   }
   //Win
-  if (count == 3) {
-    result.innerText = `You Won!`;
+  if (count == 5) {
+    result.innerText = `Menang!`;
     stopGame();
   }
 };
 
 //Creates flags and countries
 const creator = () => {
-  dragContainer.innerHTML = "";
-  dropContainer.innerHTML = "";
+  dragContainerr.innerHTML = "";
+  dropContainerr.innerHTML = "";
   let randomData = [];
   //for string random values in array
-  for (let i = 1; i <= 3; i++) {
+  for (let i = 1; i <= 5; i++) {
     let randomValue = randomValueGenerator();
     if (!randomData.includes(randomValue)) {
       randomData.push(randomValue);
@@ -161,8 +161,8 @@ const creator = () => {
     if (isTouchDevice()) {
       flagDiv.style.position = "absolute";
     }
-    flagDiv.innerHTML = `<img src="${i}.png" id="${i}">`;
-    dragContainer.appendChild(flagDiv);
+    flagDiv.innerHTML = `<img src="${i}.jpg" id="${i}">`;
+    dragContainerr.appendChild(flagDiv);
   }
   //Sort the array randomly before creating country divs
   randomData = randomData.sort(() => 0.5 - Math.random());
@@ -172,7 +172,7 @@ const creator = () => {
     ${i.charAt(0).toUpperCase() + i.slice(1).replace("-", " ")}
     </div>
     `;
-    dropContainer.appendChild(countryDiv);
+    dropContainerr.appendChild(countryDiv);
   }
 };
 

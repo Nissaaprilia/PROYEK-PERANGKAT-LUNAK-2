@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png">
+	<title>TKJ | Kuis 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</head>
+
+<body onload="readlah()">
+
+	
+
+	<aside class="" id="dafis">
+	</aside>
+	
+	<!-- KONTEN-->
+	<main class="main" id="main">
+
+		<!-- BADAN KONTEN-->
+		<div class="konten">
+			<div class="isi" id="data">
+				<center>
+					<div class="border"><h1>Kuis 1</h1></div>
+				</center>
+				<hr><br>
+				<!-- <div class="petunjuk"><br> -->
+					<center><div class="kliktunjuk"><a href="#tjk1" onclick="tjk1('tjk1')"> Petunjuk (klik untuk menyembunyikan petunjuk)<br></a></div></center>
+      				<div class="tjk1" id="tjk1">
+      					<ol style="margin-left: 10px;">
+							<b style="margin-left: 5px;">Petunjuk Mengerjakan Kuis</b>
+      						<li>Kuis ini terdiri dari 10 soal berupa pilihan ganda.</li>
+      						<li>Silahkan lengkapi data diri Anda pada form yang telah disediakan.</li>
+      						<li>Tekan "Mulai Kuis" jika Anda sudah melengkapi data diri.</li>
+      						<li>Tekan salah satu pilihan jawaban yang dianggap benar.</li>
+      					</ol>
+			        </div>
+				<!-- </div> -->
+			<center>
+				<div class="kotak">
+					<center>
+						<h2>DATA DIRI</h2>
+						<br>
+						<hr>
+						<br>
+						<div class="data_diri" style="text-align: center;">
+							<label class="form" for="nama"> Nama Lengkap 
+                                <input type="text" id="nama" class="mundu" placeholder="Masukkan nama lengkap...">
+                            </label>
+                            <label class="form" for="nama"> Sekolah 
+                                <select id="sekolah" name="sekolah" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                                    <option value="0" selected="selected">-- PILIH SEKOLAH --</option>
+									<option value="1">SMAN 1 Banjarbaru</option>
+									<option value="#">SMAN 2 Banjarbaru</option>
+									<option value="#">SMAN 3 Banjarbaru</option>
+                                </select>
+                            </label>
+                            <label class="form" for="nama"> Kelas 
+                                <select id="kelas" name="kelas" class="mundurr" aria-placeholder="-PILIH SEKOLAH-">
+                                    <option value="0" selected="selected">-- PILIH KELAS --</option>
+                                    <option value="1">XI IPA 1</option>
+                                    <option value="2">XI IPA 2</option>
+                                </select>
+                            </label>
+                            <br>
+                            <br>
+                            <br>
+							<a href="../sub1_1.html" class="kembali">
+								Kembali Ke Materi
+							</a>
+                            <div class="lanjut">
+                            	Mulai Kuis
+                        	</div>
+						</div>	
+					</center>
+				</div>
+			</center>
+			</div>
+
+			<!--KONTEN KIRI-->
+
+			<!--KONTEN Kanan-->
+			<div class="kanan" id="kiri">
+				<!-- <span class="judul">Kuis 1</span>
+				<hr> -->
+
+				
+				<!--NOMOR 1-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+						<hr>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio1" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio1" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio1" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio1" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio1" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum disable" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>
+							
+					</div>
+				</div>
+				
+				<!--NOMOR 2-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+						<hr>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio2" type="radio" name="radio2" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio2" type="radio" name="radio2" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio2" type="radio" name="radio2" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio2" type="radio" name="radio2" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio2" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 3-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+						<hr>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio3" type="radio" name="radio3" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio3" type="radio" name="radio3" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio3" type="radio" name="radio3" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio3" type="radio" name="radio3" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio3" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 4-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio4" type="radio" name="radio4" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio4" type="radio" name="radio4" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio4" type="radio" name="radio4" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio4" type="radio" name="radio4" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio4" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 5-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio5" type="radio" name="radio5" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio5" type="radio" name="radio5" value="b">
+								<span class="textnya">
+
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio5" type="radio" name="radio5" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio5" type="radio" name="radio5" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio5" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 6-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio6" type="radio" name="radio6" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio6" type="radio" name="radio6" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio6" type="radio" name="radio6" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio6" type="radio" name="radio6" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio6" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 7-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio7" type="radio" name="radio7" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio7" type="radio" name="radio7" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio7" type="radio" name="radio7" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio7" type="radio" name="radio7" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio7" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 8-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio8" type="radio" name="radio8" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio8" type="radio" name="radio8" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio8" type="radio" name="radio8" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio8" type="radio" name="radio8" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio8" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 9-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio9" type="radio" name="radio9" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio9" type="radio" name="radio9" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio9" type="radio" name="radio9" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio9" type="radio" name="radio9" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio9" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+
+				<!--NOMOR 10-->
+				<div class="bg_pertanyaan" id="bg_pertanyaan">
+					<div class="no">
+						<div class="soal">
+							<center>
+								<div class="border">
+									<div class="border"><b>Nomor <span id="nomornya"></span></b></div>
+								</div>
+							</center>
+						</div>
+					</div>
+					<div class="inti_pertanyaan">
+						<div class="pertanyaannya">
+							<p id="soalnya"></p>
+						</div>
+						<div class="batas"></div>
+						<div class="soall">
+							<label class="bg_pilihan">
+								<input id="radio10" type="radio" name="radio10" value="a">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya0"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio10" type="radio" name="radio10" value="b">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya1"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio10" type="radio" name="radio10" value="c">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya2"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio10" type="radio" name="radio10" value="d">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya3"></p>
+								</span>
+							</label>
+							<label class="bg_pilihan">
+								<input id="radio1" type="radio" name="radio10" value="e">
+								<span class="textnya">
+									<span class="nav_pilihan"></span>
+									<p id="pilihannya4"></p>
+								</span>
+							</label>
+						</div>
+						<div class="nav_sebelum" id="nav_sebelum">
+							<p>&laquo; Sebelumnya</p>
+						</div>
+						<div class="nav_selanjut disable" id="nav_selanjut">
+							<p>Selanjutnya &raquo;</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!--BATAS KONTEN KIRI-->
+			
+			<!--KONTEN Kiri
+			
+			<div class="kiri" id="kanan">
+				<div class="bg_nav">
+					<div class="bg_full">
+						<p class="text">Nomor Soal</p><br>
+					</div>
+					<center>
+					<div style="background-color: #9999ff; color: white;" id="time">15 : 00</div>
+					</center>
+					<div class="bg_soal">
+						<div class="soal_nav belum">
+							<p class="text fontsedang ">1</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">2</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">3</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">4</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">5</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">6</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">7</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">8</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">9</p>
+						</div>
+						<div class="soal_nav belum">
+							<p class="text fontsedang">10</p>
+						</div>
+						<div class="clear"></div>
+						<div class="ket fontsedang">
+							Keterangan :<br>
+							<span class="belum">Putih</span> = Belum dijawab<br>
+							<span class="sudah">Hijau</span> = Sudah dijawab
+						</div>
+					</div>
+				</div>
+			<br>
+			-->
+				<div class="selesai">SELESAI</div>
+			</div>
+			<!-- BATAS KONTEN KANAN-->
+
+			<!-- SKOR-->
+			<div class="dataaa hilang" id="halskor">
+				<div class="skornya">
+					<center>
+						
+						<span class="judul">Kuis 1</span>
+						<br>
+						<br>
+
+						<table class="t_hasil">
+							<tr>
+								<td class="ket_hasil">
+									<p>Nama Lengkap</p>
+								</td>
+								<td>
+									<p>:</p>
+								</td>
+								<td>
+									<p class="nama">Akhmad Fudail</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="ket_hasil">
+									<p>Sekolah</p>
+								</td>
+								<td>
+									<p>:</p>
+								</td>
+								<td>
+									<p class="sekolah">SMK</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="ket_hasil">
+									<p>Kelas</p>
+								</td>
+								<td>
+									<p>:</p>
+								</td>
+								<td>
+									<p class="kelas">X</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="ket_hasil">
+									<p>Hari, Tgl</p>
+								</td>
+								<td>
+									<p>:</p>
+								</td>
+								<td>
+									<p class="hari">Senin</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="ket_hasil">
+									<p>Waktu Selesai</p>
+								</td>
+								<td>
+									<p>:</p>
+								</td>
+								<td>
+									<p class="waktu">12:30</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="ket_hasil">
+									<p>Nilai</p>
+								</td>
+								<td>
+									<p>:</p>
+								</td>
+								<td>
+									<p class="hasill">50</p>
+								</td>
+							</tr>
+						</table>
+						<br>
+						<div id="ulang" class="ket_ulang hilang">
+							Anda Tidak Lulus, nilaimu masih belum memenuhi KKM (KKM = 70)<br><br>
+							<a href="kuiss1.html" class="tmblUlang">Ulang Kuis</a>
+							<a class="tmblUlang" href="../sub1_1.html">Kembali Ke Materi</a>
+						</div>
+						<div id="materi" class="ket_ulang hilang">
+							Selamat anda berhasil dan dapat melanjutkan ke materi selanjutnya<br><br>
+							<a class="tmblUlang" href="../../Materi 2/sub2.1.html">Materi Selanjutnya</a>
+						</div>
+						<br>
+					</center>
+				</div>
+			</div>
+		</div>
+		
+	</main>
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+	
+	
+	<script src="jskuiss1_awal.js"></script>
+	<script src="jsdataa_kuis1.js"></script>
+</body>

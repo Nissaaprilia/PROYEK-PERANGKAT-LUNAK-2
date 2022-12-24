@@ -1,0 +1,118 @@
+
+/* ---------------------------------------------------
+   Konten Kuis 
+----------------------------------------------------- */
+
+#content {
+    background-color: white;
+    width: calc(100% - 15px);
+    padding: 20px;
+    height: 91vh !important;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    /* position: static; */
+    top: 0;
+    right: 0;
+    
+}
+.previous {
+    background-color: #198754;
+    padding: 8px 15px;
+    border:none;
+    transition-duration: 0.4s;
+    font-family: comic sans ms;
+    cursor: pointer;
+    color:white;
+    width: 150px;
+  }
+.previous:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #198754;
+}
+.next {
+    background-color: #198754;
+    padding: 8px 15px;
+    border:none;
+    transition-duration: 0.4s;
+    font-family: comic sans ms;
+    cursor: pointer;
+    color:white;
+    width: 150px;
+}
+.next:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #198754;
+}
+
+#content.active {
+    width: 100%;
+}
+
+.card{
+    background-color:#24223b;
+}
+.card-body{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #24223b;
+    border-style: 10px;
+}
+
+
+.image-featured {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+.image-soal{
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+    object-position: center;
+}
+.image-soal1{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+.image-content{
+    width: 35%;
+    height: 30%;
+    object-fit: contain;
+    object-position: center;
+}.image-content1{
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+    object-position: center;
+}
+.image-konfig{
+    width: 50%;
+    height: 30%;
+    object-fit: contain;
+    object-position: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#border-img { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 round;
+  }
+  .petunjuk {
+    padding: 20px;
+    padding-top: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #24223b;
+    border-style: 20px ;
+    /* margin-bottom: 5px; */
+  }

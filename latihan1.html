@@ -13,6 +13,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/konten.css">
+    <link rel="stylesheet" href="./css/latihan1.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -89,13 +90,32 @@
         </script>
     </div>
     <div class="judul">
-        
-            <script src="#"></script>
-            <div id="g1" class="nextnew">
-                <br> 
-                <hr style="height:1px;border-width:1;background-color:lightgray">
-                <a href="apendikular.html"><button class="button-left"> <- Kembali </button></a> 
-                <a href="kuis1.html"><button class="button-right"> Selanjutnya -> </button></a>
+        <div class="grid-item">
+        <div class="baris">
+          <h4> <b>Latihan 1</b></h4>
+            <h5>Petunjuk Soal</h5>
+                <ul style="margin-left: -20px;">
+                    <li>Soal terdiri dari isian, lengkapi lah isian yang sudah disediakan di dalam kotak</li>
+                    <li>Jika jawaban kamu benar, maka kotak akan bewarna "<font style="color: green;font-weight: bold;">Hijau</font>".</li>
+                    <li>Jika jawaban kamu salah, maka kotak akan bewarna "<font style="color: red;font-weight: bold;">Merah</font>".</li>
+                </ul>
+                <hr style="height:3px;border-width:0;color:grey;background-color:grey">
+            <ol>
+            <li>Rangka yang terletak di sumbu tubuh rangka <input type="text" style="padding: 3px;" id="isian1"><span id="cekIsian1"></span></li><br>
+            <li>Rangka <input type="text" style="padding: 3px;" id="isian2"> yaitu rangka yang terletak di kanan kiri sumbu tubuh dan jumlah 
+                tulangnya sepasang  <span id="cekIsian2"></span></li><br>
+            <li> Sistem gerak pada manusia terbagi dua, yaitu sistem gerak <input type="text" style="padding: 3px;" id="isian3"> dan sistem 
+                gerak pasif <span id="cekIsian3"></span></li><br>
+            <li><img src="./img/panggul.png" width="150px" height="150px">gambar disamping adalah gambar tulang <input type="text" style="padding: 3px;" id="isian4"><span id="cekIsian4"></span></li><br>
+            <li> Fungsi utama tulang anggota gerak bagian bawah adalah untuk menopang berat tubuh dan mengatur gerak <input type="text" style="padding: 3px;" id="isian5"> ketika berjalan <span id="cekIsian5"></span></li>
+            </ol>
+            <br>
+            <button class="button-utama" onclick="cekJawaban()">Cek Jawaban</button>
+            <button onclick="reset()" class="button-utama">Coba Lagi</button>
+        </div>     
+    </div>
             </div>
+        </main>
+        <script src="js/latihan1.js"></script>
             </body>
             </html>

@@ -1,0 +1,397 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: wait;
+	background-size: 35%;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 40px;
+	background-color: green;
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.bar{
+  float: left;
+  margin-left: 10px;
+  width: 8%;
+}
+
+.utama{
+  position: absolute;
+  top: 0;
+    right: 0;
+  cursor: pointer;
+}
+
+.home{
+	width: 12%;
+	float: right;
+	margin-right: 10px;
+}
+
+aside{
+	width: 18%;
+	float: left;
+	height: 567px;
+  display: none;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(168, 194, 251);
+  padding-top: 5%;
+  overflow: auto;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 3% 0px 3% 10%;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidenav a{
+	width: 90%;
+}
+
+.dropdown-btn{
+	width: 100%;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+  color: white;
+  background-color: #8BC34A;
+}
+
+.aktif {
+  background-color: rgb(3, 31, 75);
+  color: white;
+}
+
+.sidenav a:hover{
+  background-color: #187bcd;
+  color: white;
+}
+
+.aktif2 {
+  background-color: #187bcd;
+  color: white;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(3, 31, 75);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: rgb(208, 223, 255);
+  padding-left: 8px;
+}
+
+.dropdown-containerr {
+  display: block;
+  background-color: rgb(208, 223, 255);
+  padding-left: 8px;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 20px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dafis-hilang{
+  display: block;
+}
+
+main{
+	height: 487px;
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main{
+  width: 100%;
+}
+
+.main-sempit{
+  width: 82%;
+}
+
+.subbab{
+  width: 100%;
+  background-color: #187bcd;
+  color: white;
+  padding: 5px 0px 5px 0px;
+  font-size: 30px;
+}
+
+.konten{
+	margin: 10px;
+	background-color: 	pink;
+	height: 125%;
+	padding: 15px;
+  overflow: auto;
+  /* border: 3px dotted green; */
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.gambar{
+  width: 4%;
+}
+
+.judul{
+  font-weight: bold;
+  font-size: 35px;
+  border-color: green;
+}
+.border{
+  color: black;
+  background-color: #00e600;
+  padding: 7px;
+}
+
+.isi{
+  width: 100%;
+}
+
+.petunjuk{
+  width: 46%;
+  float: left;
+  margin: 10px;
+  overflow: auto;
+}
+
+.kliktunjuk{
+  margin: 5px 0px 5px 0px;
+  background-color:green;
+  padding: 5px 13px;
+  border-radius: 5px;
+  width: 71%;
+  font-size: 16px;
+}
+
+.kliktunjuk a{
+  text-decoration: none;
+  color: white;
+}
+
+.tjk1{
+  min-height: 5px;
+  border-style: dotted;
+  border-color: green;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px 0px 5px 0px;
+  display: block !important;
+}
+
+.tjk1 li{
+  margin: 0px 25px 5px 35px;
+}
+
+.hilang {
+    display: none !important;
+}
+
+.kotak{
+  width: 45%;
+  text-align: center;
+  margin: 0px 0px 10px 10px;
+  padding: 20px;
+  /* border-left: 8px solid green; */
+}
+
+.kembali{
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.kembali:hover{
+  background-color: #1aff1a;
+  color: black;
+}
+
+.kiri{
+  float: left;
+  width: 25%;
+  background-color: white;
+  height: 600px; 
+  padding: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /* outline: 4px solid rgb(131, 176, 190);
+  outline-offset: -20px; */
+}
+
+.kanan {
+  float: right;
+  width: 75%;
+  background-color: white;
+  height: 600px;
+  padding: 15px;
+  overflow: auto;
+  text-align: justify;
+  box-sizing: border-box;
+  border: 2px solid black;
+  /* outline: 4px solid rgb(131, 176, 190);
+  outline-offset: -20px; */
+}
+
+.disable {
+  background-color: rgb(133, 133, 133) !important;
+  color: rgb(37, 37, 37);
+  cursor: default !important;
+}
+
+/*tampilan HP*/
+@media screen and (max-width: 992px){
+  header{
+    width: 100%;
+    height: auto;
+  }
+  .bar{
+    width: 22%;
+    margin-top: 3px;
+  }
+  .home{
+    width: 8%;
+  }
+  aside{
+    display: none;
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .sidenav{
+    width: 100%;
+    height: auto;
+    position: none;
+    margin-top: 0px;
+    padding-top: 2%;
+  }
+  .sidenav a, .dropdown-btn {
+    padding: 2% 0px 2% 7%;
+    font-size: 14px;
+  }
+  .dafis-hilang{
+    display: block;
+  }
+  main{
+    width: 100%;
+    float: none;
+    font-size: 14px;
+    background-color: green;
+  }
+  .main{
+    width: 100%;
+  }
+  .main-sempit{
+    width: 100%;
+  }
+  .subbab{
+    margin-top: 10px;
+  }
+  .konten{
+    margin: 0px 10px 10px 10px;
+    height: auto;
+  }
+  .home{
+    width: 12%;
+  }
+  .gambar{
+    width: 10%;
+  }
+  .judul{
+    font-size: 23px;
+  }
+  .petunjuk{
+    width: 97%;
+    margin: 5px;
+    float: none;
+    overflow: none;
+    height: auto;
+  }
+  .kliktunjuk{
+    width: 92%;
+    font-size: 12px;
+  }
+  .kotak{
+    width: 93%;
+    height: auto; 
+    float: none;
+    overflow: none;
+    margin-top: 20px;
+    padding: 18px 0px 5px 0px;
+    border-left: none;
+    border-top: 2px solid  rgb(3, 31, 75);
+  } 
+  .kembali:hover{
+    background-color: #1aff1a;
+    color: black;
+  }
+  .kanan {
+    background-color: white;
+    width: 99%;
+    height: auto;
+    margin-top: 5px;
+    padding: 15px;
+    text-align: justify;
+    /* outline: 2px solid rgb(131, 176, 190);
+    outline-offset: -10px; */
+  } 
+  .kiri {
+    background-color: white;
+    width: 99%;
+    height: auto;
+    margin-top: 5px;
+    padding: 15px;
+    text-align: justify;
+    
+    /* outline: 2px solid rgb(131, 176, 190);
+    outline-offset: -10px; */
+
+}
+}

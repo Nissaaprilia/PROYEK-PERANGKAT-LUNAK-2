@@ -11,7 +11,9 @@
 section {
  padding-top: 5rem;
 }
-
+/* ---------------------------------------------------
+    halaman di dalam div judul grid item terdapat di latihan
+----------------------------------------------------- */
 .grid-item {
 	padding: 30px;
 	border-radius: 50px;

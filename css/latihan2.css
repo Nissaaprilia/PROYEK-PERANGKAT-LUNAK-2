@@ -47,29 +47,37 @@ main {
 /* ---------------------------------------------------
     Tabel hasil latihan 2
 ----------------------------------------------------- */
-table {
+#endMessage {
+  display: none;
+
+}
+#endMessage table {
   max-width:640px;
   margin: auto;
   margin-bottom: 20px;
   /* border: 1px solid #b0bec5; */
 }
 
-th, td {
+#endMessage th, td {
   padding: 10px 10px;
 }
 
-td {
-  border: 1px solid #90a4ae;
+#endMessage td {
+  border: 3px solid #198754;
+  border-radius: 10px;
 }
 
-tr:nth-child(even) {
-  background-color: #41bec6;
-}
+/*
+#endMessage tr:nth-child(even) {
+  background-color: #198754;
+} */
 
 /* ---------------------------------------------------
     button main lagi
 ----------------------------------------------------- */
-button {
+
+
+.btn-lat2 {
   margin: auto;
   cursor: pointer;
   display: block;
@@ -77,16 +85,10 @@ button {
   font-size: 16px;
   border-radius: 4px;
   border: none;
-  background-color: black;
+  background-color: #198754;
   color: #fff;
 }
 
-button:hover {
-  background-color: #516a75;
-}
-
-#endMessage {
-  display: none;
-  margin-top: -700px;
-
+.btn-lat2:hover {
+  background-color: #198754;;
 }

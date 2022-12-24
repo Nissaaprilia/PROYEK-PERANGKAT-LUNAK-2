@@ -1,4 +1,6 @@
-
+/* ---------------------------------------------------
+    halaman awal / index
+----------------------------------------------------- */
 .jumbotron {
     background-color: #24223b;
     padding: 6rem;
@@ -16,10 +18,10 @@ section {
 ----------------------------------------------------- */
 .grid-item {
 	padding: 30px;
-	border-radius: 50px;
+	border-radius: 20px;
 	background: #d1e7dd;
 	color: black;
 	width: 1000px;
 	position: relative;
-	left: 145px;
+	margin-left: 115px;
 }

@@ -103,13 +103,15 @@
     color: black; 
     border: 2px solid #198754;}
 
-/*
+/* ---------------------------------------------------
+    Gambar di kotak diartrosis
+----------------------------------------------------- */
 .kotak{
-    width: 400px;
-     height: 400px;
+    width: 500px;
+    height: 400px;
     margin: 40px auto;
     display: flex;
-    } */
+    } 
 
 .content-card {
     background: white;

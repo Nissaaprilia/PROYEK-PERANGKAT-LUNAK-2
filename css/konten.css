@@ -1,141 +1,141 @@
 /* ---------------------------------------------------
     Menu Sidebar Samping
 ----------------------------------------------------- */
-.side-bar{
-    background: #24223b;
-    backdrop-filter: blur (15px);
-    width: 290px;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
+.side-bar {
+  background: #24223b;
+  backdrop-filter: blur (15px);
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
-.side-bar .menuside{
-    width: auto;
-    height: auto;
-    margin-top: 80px;
+.side-bar .menuside {
+  width: auto;
+  height: auto;
+  margin-top: 80px;
 }
 
-.side-bar .menuside .item{
-    position: relative;
-    cursor: pointer;
+.side-bar .menuside .item {
+  position: relative;
+  cursor: pointer;
 }
 
-.side-bar .menuside .item a{
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-    display: block;
-    padding: 2px;
-    line-height: 40px;
+.side-bar .menuside .item a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 2px;
+  line-height: 40px;
 }
 
-.side-bar .menuside .item a:hover{
-    background-color: #36335f;
-    transition: 0.3s ease;
+.side-bar .menuside .item a:hover {
+  background-color: #36335f;
+  transition: 0.3s ease;
 }
 
-.side-bar .menuside .item i{
-    margin-right: 15px;
-} 
-
-.side-bar .menuside .item a dropdown{
-    position: absolute;
-    right: 0;
-    margin: 20px;
-    transition: 0.3s ease;
+.side-bar .menuside .item i {
+  margin-right: 15px;
 }
 
-.side-bar .menuside .item .subb-menu{
-    background: rgba(255, 255, 255, 0.1);
-    display: none;
+.side-bar .menuside .item a dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
 }
 
-.side-bar .menuside .item .subb-menu a{
-    padding-left: 80px;
+.side-bar .menuside .item .subb-menu {
+  background: rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.side-bar .menuside .item .subb-menu a {
+  padding-left: 80px;
 }
 
 /* ---------------------------------------------------
    Konten
 ----------------------------------------------------- */
 .judul {
-    margin-top:80px;
-    margin-bottom:20px;
-    padding-bottom:20px;
-    margin-left: 300px;
-    margin-right:10px;
-    width: 80%;
-    padding-right:20px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-left: 340px;
+  margin-right: 40px;
+  width: 80%;
+  padding-right: 50px;
 }
 .button-left {
-    background-color: #198754;
-    color: white;
-    padding: 8px 15px;
-    border:none;
-    cursor: pointer;
-    width: 200px;
-    transition-duration: 0.4s;
-    font-family: comic sans ms;
+  background-color: #198754;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  transition-duration: 0.4s;
+  font-family: comic sans ms;
 }
 .button-left:hover {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #198754;
-
+  background-color: white;
+  color: black;
+  border: 2px solid #198754;
 }
 
 .button-right {
-    background-color: #198754;
-    float: right;
-    color: white;
-    padding: 8px 15px;
-    border: none;;
-    cursor: pointer;
-    width: 200px;
-    margin-right: 0px;
-    transition-duration: 0.4s;
-    font-family: comic sans ms;
+  background-color: #198754;
+  float: right;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  margin-right: 0px;
+  transition-duration: 0.4s;
+  font-family: comic sans ms;
 }
 .button-right:hover {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #198754;}
+  background-color: white;
+  color: black;
+  border: 2px solid #198754;
+}
 
 /* ---------------------------------------------------
     Gambar di kotak diartrosis
 ----------------------------------------------------- */
-.kotak{
-    width: 500px;
-    height: 400px;
-    margin: 40px auto;
-    display: flex;
-    } 
+.kotak {
+  width: 500px;
+  height: 400px;
+  margin: 40px auto;
+  display: flex;
+}
 
 .content-card {
-    background: white;
-    border-radius: 15px;
-    padding:15px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    opacity: 0.8; 
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
 /* ---------------------------------------------------
     Gambar di konten dapat diperbesar
 ----------------------------------------------------- */
-.imgset{
-    margin-left: 480px;
-    width: 20%;
-    border: 3px solid black;
+.imgset {
+  margin-left: 480px;
+  width: 20%;
+  border: 3px solid black;
 }
 
 .imgset img {
-    width: 100%;
-    transition: transform 2s;
+  width: 100%;
+  transition: transform 2s;
 }
 
-.imgset:hover img{
-    transform: scale(1.4);
+.imgset:hover img {
+  transform: scale(1.4);
 }

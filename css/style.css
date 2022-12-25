@@ -1,27 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+}
 /* ---------------------------------------------------
     halaman awal / index
 ----------------------------------------------------- */
 .jumbotron {
-    background-color: #24223b;
-    padding: 6rem;
+  background-color: #24223b;
+  padding: 6rem;
 }
 
 #projects {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 section {
- padding-top: 5rem;
+  padding-top: 5rem;
 }
 /* ---------------------------------------------------
     halaman di dalam div judul grid item terdapat di latihan
 ----------------------------------------------------- */
 .grid-item {
-	padding: 30px;
-	border-radius: 20px;
-	background: #d1e7dd;
-	color: black;
-	width: 1000px;
-	position: relative;
-	margin-left: 115px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #d1e7dd;
+  color: black;
+  width: 1000px;
+  position: relative;
+  margin-left: 95px;
 }

@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
   <!-- My CSS -->
-  <link rel="stylesheet" href="./css/konten.css">
-  <link rel="stylesheet" href="./css/kuis.css">
+  <link rel="stylesheet" href="/css/konten.css">
+  <link rel="stylesheet" href="./evaluasi.css">
 
   <!--\Font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -95,68 +95,91 @@
       </script>
       </div>
       <!-- Navbar Samping-->
-
-   <!-- Kerangka Konten -->
-    <div class="judul"> 
-      <div id="content">
-          <div class="petunjuk">
-              <p><u><b>Petunjuk Soal: </b></u></p>
-              <ol>
-                  <li>Terdiri dari 4 soal pilihan ganda.</li>
-                  <li>Pilihlah satu jawaban yang paling benar </li>
-                  <li>Jika pilihan kamu benar, maka akan muncul tulisan "<font style="color: green;font-weight: bold;">benar".</font></li>
-                  <li>Jika pilihan kamu salah, maka akan muncul tulisan "<font style="color: red;font-weight: bold;">salah".</font></li>  
-                  <li>Tombol  “coba lagi” untuk mengulang kuis</li>
-                </ol>
-          </div>
-          <hr style="height:3px;border-width:0;color:grey;background-color:grey">
-      <!-- Konten - Kuis -->
-      <div class="card">
-              <form name="quiz" class="card-body">
-                 <p>1. Perhatikan gambar di bawah ini!</p>
-      
-                  <div class="text-left">
-                      <img src="./img/osifikasi.png" class="image-content" alt=""> 
-                  </div>
-              <p style="text-align: justify; text-indent: -1.3em ;margin-left: 1.3em;line-height: 2; color: black;">Gambar diatas adalah proses…</p>
-              <input style="margin-left: 30px;" type="radio" name="opsi1" value="A" id="myRadio">Sinartrosis<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi1" value="B" id="myRadio">Diartrosis<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi1" value="C" id="myRadio">Osifikasi<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi1" value="D" id="myRadio">Sendi Pelana<br>
-              <span id="ket-no0"> </span><br>
-              
-              <p>2. Sendi mati atau persendian yang tidak memungkinkan untuk terjadinya pergerakan disebut…</p>
-      
-              <input style="margin-left: 30px;" type="radio" name="opsi2" value="A" id="myRadio">Amfiartrosis<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi2" value="B" id="myRadio">Diartrosis<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi2" value="C" id="myRadio">Sendi engsel<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi2" value="D" id="myRadio">Sinartrosis<br>
-              <span id="ket-no1"></span><br>
-
-              <p style="text-align: justify; text-indent: -1.3em ;margin-left: 1.3em;line-height: 2; color: black;">3.	Sendi antara tulang pengumpul dengan pergelangan tangan disebut sendi …</p>
-
-              <input style="margin-left: 30px;" type="radio" name="opsi3" value="A" id="myRadio">Engsel<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi3" value="B" id="myRadio">Kondiloid<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi3" value="C" id="myRadio">Geser<br>
-              <input style="margin-left: 30px;" type="radio" name="opsi3" value="D" id="myRadio">pelana<br>
-              <span id="ket-no2"></span><br>
-
-              <p style="text-align: justify; text-indent: -1.3em ;margin-left: 1.3em;line-height: 2; color: black;">4.	Amfiartrosis adalah hubungan antartulang yang…</p>
-
-              <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="A" id="myRadio">tidak memungkinkan untuk terjadinya pergerakan.<br>
-              <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="B" id="myRadio">memungkinkan terjadinya gerakan tulang secara lebih bebas.<br>
-              <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="C" id="myRadio">memungkinkan gerak kesemua arah <br>
-              <input style="margin-left: 30px; font-style: italic;" type="radio" name="opsi4" value="D" id="myRadio">hanya memungkinkan untuk terjadinya sedikit gerakan.<br>
-              <span id="ket-no3"></span>
-              <br>
-              <br>
-              <p id="ket" class="center ket-jwbn"></p>
-              <div class="left ket2" id="ket2"></div></p>
-              <input type="button" class="previous" value="Cek Jawaban" onclick="getScore(this.form);">
-              <input id="reset" type="reset" class="next" value="Coba Lagi">
-          </form>
-      </div>
-      <script src="./js/kuis3.js"></script>
-    </div>
+         <!-- Kerangka Konten -->
+    < class="judul"> 
+              <body onload="NextQuestion(0)">
+            <main>
+                <!-- creating a modal for when quiz ends -->
+                <div class="modal-container" id="score-modal">
+                  
+                    <div class="modal-content-container">
+                      
+                        <h1>Latihan telah selesai</h1>
+                      
+                        <div class="grade-details">
+                            <p>Pertanyaan: 5</p>
+                            <p>Benar : <span id="wrong-answers"></span></p>
+                            <p>Salah : <span id="right-answers"></span></p>
+                            <p>Score: <span id="grade-percentage"></span>%</p>
+                            <p ><span id="remarks"></span></p>
+                        </div>
+                      
+                        <div class="modal-button-container">
+                            <button onclick="closeScoreModal()">Continue</button>
+                        </div>
+                      
+                    </div>
+                </div>
+        
+                <div class="game-quiz-container">
+                  
+                    <div class="game-details-container">
+                        <h1>Score : <span id="player-score"></span> / 100</h1>
+                        <h1> Question : <span id="question-number"></span> /20 </h1>
+                    </div>
+        
+                    <div class="game-question-container">
+                        <h1 id="display-question"></h1>
+                    </div>
+        
+                    <div class="game-options-container">
+                      
+                       <div class="modal-container" id="option-modal">
+                         
+                            <div class="modal-content-container">
+                                 <h1>Pilihlah salah satu jawaban</h1>
+                              
+                                 <div class="modal-button-container">
+                                    <button onclick="closeOptionModal()">Oke</button>
+                                </div>
+                              
+                            </div>
+                         
+                       </div>
+                      
+                        <span>
+                            <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                            <label for="option-one" class="option" id="option-one-label"></label>
+                        </span>
+                      
+        
+                        <span>
+                            <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                            <label for="option-two" class="option" id="option-two-label"></label>
+                        </span>
+                      
+        
+                        <span>
+                            <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                            <label for="option-three" class="option" id="option-three-label"></label>
+                        </span>
+                      
+        
+                        <span>
+                            <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                            <label for="option-four" class="option" id="option-four-label"></label>
+                        </span>
+        
+        
+                    </div>
+        
+                    <div class="next-button-container">
+                        <button onclick="handleNextQuestion()">Selanjutnya</button>
+                    </div>
+        
+                </div>
+         
+            </main>
+            <script src="./evaluasi.js"></script>
             </body>
             </html>

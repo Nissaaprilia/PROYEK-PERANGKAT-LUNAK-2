@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 main {
   width: 100%;
   min-height: 100vh;
@@ -8,10 +11,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family: "Rubik";
 }
 
 .game-quiz-container {
-  width: 60rem;
+  width: 55rem;
   height: 35rem;
   background-color: #e2edff;
   display: flex;

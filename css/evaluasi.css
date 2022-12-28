@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+.petunjuk {
+  padding: 20px;
+  padding-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #24223b;
+  border-style: 20px;
+  /* margin-bottom: 5px; */
+}
 main {
   width: 100%;
   min-height: 100vh;
@@ -12,6 +21,7 @@ main {
   background-size: cover;
   background-position: center;
   font-family: "Rubik";
+  margin-top: 35px;
 }
 
 .game-quiz-container {
@@ -23,7 +33,7 @@ main {
   align-items: center;
   justify-content: space-around;
   border-radius: 30px;
-  margin-left: 250px;
+  margin-left: 50px;
 }
 
 .game-details-container {

@@ -37,9 +37,10 @@ section {
   margin-left: 95px;
 }
 .card-header {
+  width: 80%;
   color: white;
-  background-color: #198754;
   padding: 5px;
+  text-align: center;
 }
 .card {
   color: black;

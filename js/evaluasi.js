@@ -197,7 +197,7 @@ let playerScore = 0;
 let wrongAttempt = 0;
 let indexNumber = 0;
 
-// function for displaying next question in the array to dom
+// fungsi untuk menampilkan pertanyaan berikutnya
 function NextQuestion(index) {
   handleQuestions();
   const currentQuestion = shuffledQuestions[index];
@@ -211,19 +211,19 @@ function NextQuestion(index) {
 }
 
 function checkForAnswer() {
-  const currentQuestion = shuffledQuestions[indexNumber]; //gets current Question
-  const currentQuestionAnswer = currentQuestion.correctOption; //gets current Question's answer
-  const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
+  const currentQuestion = shuffledQuestions[indexNumber]; //mendapatkan pertanyaan saat ini
+  const currentQuestionAnswer = currentQuestion.correctOption; //mendapatkan jawaban yang benar
+  const options = document.getElementsByName("option"); //mendapatkan semua opsi
   let correctOption = null;
 
   options.forEach((option) => {
     if (option.value === currentQuestionAnswer) {
-      //get's correct's radio input with correct answer
+      //mendapatkan hasiljawaban dengan radio button yang benar
       correctOption = option.labels[0].id;
     }
   });
 
-  //checking to make sure a radio input has been checked or an option being chosen
+  //memeriksa untuk memastikan input radio telah diperiksa atau opsi dipilih
   if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
     document.getElementById("option-modal").style.display = "flex";
   }
@@ -234,7 +234,7 @@ function checkForAnswer() {
       document.getElementById(correctOption).style.backgroundColor = "green";
       playerScore++;
       indexNumber++;
-      //set to delay question number till when next question loads
+      //menunda waktu delay ke pertanyaan berikutnya
       setTimeout(() => {
         questionNumber++;
       }, 1000);
@@ -255,7 +255,7 @@ function checkForAnswer() {
   });
 }
 
-//called when the next button is called
+//fungsi saat memanggil pertanyaan berikutnya
 function handleNextQuestion() {
   checkForAnswer();
   unCheckRadioButtons();
@@ -270,7 +270,7 @@ function handleNextQuestion() {
   }, 1000);
 }
 
-//sets options background back to null after display the right/wrong colors
+//fungsi memberi tahu warna jawaban yang benar atau salah
 function resetOptionBackground() {
   const options = document.getElementsByName("option");
   options.forEach((option) => {
@@ -278,7 +278,7 @@ function resetOptionBackground() {
   });
 }
 
-// unchecking all radio buttons for next question(can be done with map or foreach loop also)
+// menghapus semua centang opsi
 function unCheckRadioButtons() {
   const options = document.getElementsByName("option");
   for (let i = 0; i < options.length; i++) {
@@ -286,23 +286,23 @@ function unCheckRadioButtons() {
   }
 }
 
-// function for when all questions being answered
+// berfungsi saat semua pertnyaan dijawab
 function handleEndGame() {
   let remark = null;
   let remarkColor = null;
 
-  // condition check for player remark and remark color
+  // kondisi ketika pengguna sudah menyelesaikan pertanyaan
   if (playerScore <= 0) {
     remark = "Terus Mencoba.";
     remarkColor = "red";
-  } else if (playerScore >= 1 && playerScore < 3) {
+  } else if (playerScore >= 5 && playerScore < 10) {
     remark = "Tingkatkan lagi.";
     remarkColor = "orange";
-  } else if (playerScore >= 19) {
+  } else if (playerScore >= 15) {
     remark = "Kerja bagus.";
     remarkColor = "green";
   }
-  const playerGrade = (playerScore / 5) * 100;
+  const playerGrade = playerScore * 5;
 
   //data to display to score board
   document.getElementById("remarks").innerHTML = remark;

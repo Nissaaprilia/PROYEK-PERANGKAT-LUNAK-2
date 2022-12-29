@@ -6,13 +6,7 @@ const result = document.getElementById("result");
 const controls = document.querySelector(".controls-container");
 const dragContainerr = document.querySelector(".draggable-objects");
 const dropContainerr = document.querySelector(".drop-points");
-const data = [
-  "kondiloid",
-  "luncur",
-  "pelana",
-  "peluru",
-  "putar",
-];
+const data = ["kondiloid", "luncur", "pelana", "peluru", "putar"];
 
 let deviceType = "";
 let initialX = 0,
@@ -72,12 +66,8 @@ const touchMove = (e) => {
     let newX = e.touches[0].clientX;
     let newY = e.touches[0].clientY;
     let currentSelectedElement = document.getElementById(e.target.id);
-    currentSelectedElement.parentElement.style.top =
-      currentSelectedElement.parentElement.offsetTop - (initialY - newY) + "px";
-    currentSelectedElement.parentElement.style.left =
-      currentSelectedElement.parentElement.offsetLeft -
-      (initialX - newX) +
-      "px";
+    currentSelectedElement.parentElement.style.top = currentSelectedElement.parentElement.offsetTop - (initialY - newY) + "px";
+    currentSelectedElement.parentElement.style.left = currentSelectedElement.parentElement.offsetLeft - (initialX - newX) + "px";
     initialX = newX;
     initialY - newY;
   }
@@ -93,21 +83,13 @@ const drop = (e) => {
     //Get boundaries of div
     const currentDropBound = currentDrop.getBoundingClientRect();
     //if the position of flag falls inside the bounds of the countru name
-    if (
-      initialX >= currentDropBound.left &&
-      initialX <= currentDropBound.right &&
-      initialY >= currentDropBound.top &&
-      initialY <= currentDropBound.bottom
-    ) {
+    if (initialX >= currentDropBound.left && initialX <= currentDropBound.right && initialY >= currentDropBound.top && initialY <= currentDropBound.bottom) {
       currentDrop.classList.add("dropped");
       //hide actual image
       currentElement.classList.add("hide");
       currentDrop.innerHTML = ``;
       //Insert new img element
-      currentDrop.insertAdjacentHTML(
-        "afterbegin",
-        `<img src= "${currentElement.id}.jpg">`
-      );
+      currentDrop.insertAdjacentHTML("afterbegin", `<img src= "${currentElement.id}.jpg">`);
       count += 1;
     }
   } else {
@@ -125,16 +107,13 @@ const drop = (e) => {
       draggedElement.setAttribute("draggable", "false");
       e.target.innerHTML = ``;
       //insert new img
-      e.target.insertAdjacentHTML(
-        "afterbegin",
-        `<img src="${draggedElementData}.jpg">`
-      );
+      e.target.insertAdjacentHTML("afterbegin", `<img src="${draggedElementData}.jpg">`);
       count += 1;
     }
   }
-  //Win
+  //jika permainan sudah selesai
   if (count == 5) {
-    result.innerText = `Menang!`;
+    result.innerText = `Selesai!`;
     stopGame();
   }
 };

@@ -1,3 +1,4 @@
+//menyimpan data soal dalam variabel
 var numQues = 4;
 var numChoi = 4;
 var answers = new Array(4);
@@ -7,6 +8,7 @@ answers[2] = "B";
 answers[3] = "A";
 var currSelection;
 
+//fungsi untuk memanggil score lewat form
 function getScore(form) {
   var score = 0;
   var currElt;
@@ -15,6 +17,7 @@ function getScore(form) {
     currElt = i * numChoi;
     answered = false;
 
+    //cek jawaban
     for (j = 0; j < numChoi; j++) {
       currSelection = form.elements[currElt + j];
       if (currSelection.checked) {
@@ -28,7 +31,7 @@ function getScore(form) {
           document.getElementById(`ket-no${i}`).style = "display:none";
         }
       }
-    }
+    } // apabila tidak menjawab semua jawaban
     if (answered === false) {
       document.getElementById("ket").innerHTML = "Jawablah semua pertanyaan yang tersedia!";
       return false;

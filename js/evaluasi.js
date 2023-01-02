@@ -1,4 +1,4 @@
-//inisiasi soal dalam quiz
+//inisiasi / menyimpan soal soal dalam quiz
 const questions = [
   {
     question: "Tulang merupakan jaringan elastis yang hidup, yang dipecah dan dibangun untuk menyusun rangka manusia selama kehidupan. Fungsi rangka tubuh sebagai berikut, kecuali..",
